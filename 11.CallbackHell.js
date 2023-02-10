@@ -15,11 +15,11 @@ const getTodos = (resource,callback) =>{
   request.send();
 };
 
-getTodos('todos/khine.json',(err,data)=>{
+getTodos('khine.json',(err,data)=>{
   console.log(data);
-  getTodos('todos/thwe.json',(err,data)=>{
+  getTodos('thwe.json',(err,data)=>{
     console.log(data);
-    getTodos('todos/zar.json',(err,data)=>{
+    getTodos('zar.json',(err,data)=>{
       console.log(data);
     })
   })
